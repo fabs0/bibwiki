@@ -49,10 +49,10 @@ function updateBibtex() {
     getPageDetails(country, title, function(info) {
         $('#output').text('@misc{wiki:' + nameifyTitle(info.title) + ',\n' +
         '   author = "Wikipedia",\n' +
-        '   title = "{' + info.title + '} --- {W}ikipedia{,} The Free Encyclopedia",\n' +
+        '   title = "{' + info.title + '} --- {W}ikipedia{,} Die Freie Enzyklopädie",\n' +
         '   year = "' + moment().format('YYYY') + '",\n' +
         '   howpublished = {\\' + $('#urlpackage').val() + '{http://' + info.country + '.wikipedia.org/w/index.php?title=' + encodeURIComponent(info.title).split("%").join("\\%") + '&oldid=' + info.oldid + '}},\n' +
-        '   note = "[Online; accessed ' + moment().format('DD-MMMM-YYYY') + ']"\n' +
+        '   note = "[Online; Zugriff am ' + moment().format('DD-MMMM-YYYY') + ']"\n' +
         ' }');
 
         $('#sample').html('Wikipedia. <em>' + info.title + '</em>. <tt><a href="http://' + info.country + '.wikipedia.org/w/index.php?title=' + encodeURIComponent(info.title) + '&amp;oldid=' + info.oldid + '">http://' + info.country + '.wikipedia.org/w/index.php?title='+ encodeURIComponent(info.title) +'&amp;oldid='+ info.oldid +'</a></tt>, ' + moment().format('YYYY') + '. [Online; accessed ' + moment().format('DD-MMMM-YYYY') + ']');
