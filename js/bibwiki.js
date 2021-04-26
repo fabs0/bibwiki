@@ -50,7 +50,7 @@ function updateBibtex() {
         $('#output').text('@Misc{wiki:' + nameifyTitle(info.title) + ',\n' +
         '   author = "{Wikipedia"},\n' +
         '   howpublished = {\\' + $('#urlpackage').val() + '{http://' + info.country + '.wikipedia.org/w/index.php?title=' + encodeURIComponent(info.title).split("%").join("\\%") + '&oldid=' + info.oldid + '}},\n' +
-        '   note = "{[Online; Zugriff am ' + moment().format('DD-MMMM-YYYY') + ']}"\n' +
+        '   note = "{[Online; Zugriff am ' + moment().format('DD-MMMM-YYYY') + ']}",\n' +
         '   title = "{' + info.title + '} --- {W}ikipedia{,} {D}ie {F}reie {E}nzyklopädie},\n' +
         '   year = "{' + moment().format('YYYY') + '}",\n' +
         ' }');
