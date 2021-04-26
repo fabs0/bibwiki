@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <!-- (C) Iain R. Learmonth 2013. Made available under the terms of GNU GPL v2
      or any later version at your option. -->
@@ -50,20 +50,20 @@
 
       <main role="main">
       <div class="alert alert-warning">
-        <p><b>IMPORTANT NOTE:</b> Most educators and professionals do not consider it appropriate to use tertiary sources such as encyclopedias as a sole source for any information—citing an encyclopedia as an important reference in footnotes or bibliographies may result in censure or a failing grade. Wikipedia articles should be used for background information, as a reference for correct terminology and search terms, and as a starting point for further research.</p>
+        <p><b>WICHTIG:</b> Die meisten Pädagogen und Fachleute halten es nicht für angemessen, tertiäre Quellen wie Enzyklopädien als alleinige Informationsquelle zu verwenden. Das Zitieren einer Enzyklopädie als wichtige Referenz in Fußnoten oder Bibliografien kann zu Kritik oder einer nicht bestandenen Note führen. Wikipedia-Artikel sollten als Hintergrundinformationen, als Referenz für die korrekte Terminologie und Suchbegriffe und als Ausgangspunkt für weitere Recherchen verwendet werden.</p>
       </div>
 
-        <p class="lead">Enter the Wikipedia URL below: (or use this bookmarklet: <a href="javascript:window.location='https://irl.github.io/bibwiki/?q='+window.location;">BibWiki</a>)</p>
+        <p class="lead">Wikipedia URL eingeben: (oder dieses Lesezeichen verwenden: <a href="javascript:window.location='https://irl.github.io/bibwiki/?q='+window.location;">BibWiki</a>)</p>
         <p><form role="form">
             <input type="text" value="https://en.wikipedia.org/wiki/Plagiarism" id="input" class="form-control">
             <br>
-            <input onclick="updateBibtex();" class="btn btn-success" value="Go!" style="width:100%;">
+            <input onclick="updateBibtex();" class="btn btn-success" value="Los!" style="width:100%;">
             <br><br>
             <textarea id="output" class="form-control" rows="10"></textarea>
            </form>
         <p id="sample"></p>
-        <h2>Advanced Options</h2>
-        <p>Choose URL package to use: <select id="urlpackage" onchange="updateBibtex();"><option value="url">url or hyperref</option><option value="texttt">None</option></select></p>
+        <h2>Erweiterte Optionen</h2>
+        <p>URL Paket: <select id="urlpackage" onchange="updateBibtex();"><option value="url">url or hyperref</option><option value="texttt">None</option></select></p>
 
     </main>
 
