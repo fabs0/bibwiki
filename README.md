@@ -1,4 +1,4 @@
-# bibwiki
+# bibwiki ( German Translation )
 
 *BibTeX Generator for Wikipedia*
 
