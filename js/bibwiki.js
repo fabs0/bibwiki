@@ -48,12 +48,13 @@ function updateBibtex() {
     followRedirects(country, input, function(country, title) {
     getPageDetails(country, title, function(info) {
         $('#output').text('@Misc{wiki:' + nameifyTitle(info.title) + ',\n' +
-        '   author = {Wikipedia},\n' +
+        '   author       = {Wikipedia},\n' +
         '   howpublished = {\\' + $('#urlpackage').val() + '{http://' + info.country + '.wikipedia.org/w/index.php?title=' + encodeURIComponent(info.title).split("%").join("\\%") + '&oldid=' + info.oldid + '}},\n' +
-        '   note = {[Online; Zugriff am ' + moment().format('DD-MMMM-YYYY') + ']},\n' +
-        '   title = {{' + info.title + '} --- {W}ikipedia{,} {D}ie {F}reie {E}nzyklopädie}},\n' +
-        '   year = {' + moment().format('YYYY') + '}\n' +
+        '   note         = {[Online; Zugriff am ' + moment().format('DD-MMMM-YYYY') + ']},\n' +
+        '   title        = {{' + info.title + '} --- {W}ikipedia{,} {D}ie {F}reie {E}nzyklopädie}},\n' +
+        '   year         = {' + moment().format('YYYY') + '}\n' +
         ' }');
+        
         
         $('#sample').html('Wikipedia. <em>' + info.title + '</em>. <tt><a href="http://' + info.country + '.wikipedia.org/w/index.php?title=' + encodeURIComponent(info.title) + '&amp;oldid=' + info.oldid + '">http://' + info.country + '.wikipedia.org/w/index.php?title='+ encodeURIComponent(info.title) +'&amp;oldid='+ info.oldid +'</a></tt>, ' + moment().format('YYYY') + '. [Online; accessed ' + moment().format('DD-MMMM-YYYY') + ']');
 
