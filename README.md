@@ -1,23 +1,19 @@
 # bibwiki ( German Translation )
 
-*BibTeX Generator for Wikipedia*
+*BibTeX-Eintrag Generator für Wikipedia*
 
-This project uses Wikipedia's API to extract information about articles
-using their URLs and then formats a citation for that article for use
-with BibTeX.
+Dieses Projekt nutzt die Wikipedia API, um Informationen aus der URL zu ziehen und daraus einen BibTeX-Eintrag für diesen Eintrag zu formatieren.
 
-## Things that happen when you click the button
+## Was passiert wenn du den Knopf drückst
 
-1. The country code and article name are extracted from the URL.
-2. All redirects are followed to get to the canonical name for the article.
-3. The details for the article are retrieved.
-4. The BibTeX and HTML representations for the citation are updated.
+1. Der Landescode und Artikelname werden aus der URL gezogen.
+2. Alle Weiterleitungen werden gefolgt, um den kanonischen Namen der Artikels zu bekommen.
+3. Die Details des Artikels werden extrahiert.
+4. Die BibTeX und HTML Einträge zum Artikel werden aktualisiert.
 
-Steps 3 and 4 occur as asynchronous callbacks once the previous step is complete.
+## Gebündelte Abhängigkeiten
 
-## Bundled dependencies
-
-This project uses:
+Dieses Projekt nutzt:
 
  * Twitter Bootstrap
  * jQuery
@@ -25,10 +21,10 @@ This project uses:
  
 ## Disclaimer
  
-Most educators and professionals do not consider it appropriate to use
-tertiary sources such as encyclopedias as a sole source for any
-information. Citing an encyclopedia as an important reference in footnotes
-or bibliographies may result in censure or a failing grade. Wikipedia
-articles should be used for background information, as a reference for
-correct terminology and search terms, and as a starting point for
-further research.
+Die meisten Pädagogen und Fachleute halten es nicht für angemessen,
+tertiäre Quellen wie Enzyklopädien als alleinige Quelle für alle
+Informationen zu verwenden. In Fußnoten eine Enzyklopädie als wichtige 
+Referenz zu zitieren kann zu einem Tadel oder einer nicht bestandenen 
+Note führen. Wikipedia Artikel sollten für Hintergrundinformationen 
+verwendet werden, als Referenz für korrekte Terminologie und 
+Suchbegriffe und als Ausgangspunkt fürweitere Nachforschungen.
